@@ -1,7 +1,8 @@
 name: Login to Amazon ECR
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "main" ]
 
 jobs:
   login_ecr:
